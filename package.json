@@ -1,0 +1,24 @@
+{
+  "name": "simple-xlsjs",
+  "version": "0.1.0",
+  "description": "基于xlsx封装简单易用的api",
+  "main": "index.js",
+  "author": "fenghen",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./test/index.html"
+  },
+  "dependencies": {
+    "xlsx": "^0.14.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.4.5"
+  },
+  "alias": {
+    "./dist/cpexcel.js": ""
+  }
+}
