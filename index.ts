@@ -4,7 +4,11 @@ import XLSX from 'xlsx';
  * 从input中加载 WorkBook
  * @param file input获取的File对象
  */
-export function loadWbFromFile(file: File): Promise<XLSX.WorkBook> {
+export function loadWbFromFile(file: File | string): Promise<XLSX.WorkBook> {
+  if (typeof file === 'string') {
+    return Promise.resolve(XLSX.readFile(file))
+  }
+
   return new Promise((resolve) => {
     const reader: FileReader = new FileReader();
     

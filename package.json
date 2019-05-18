@@ -7,15 +7,20 @@
   "license": "MIT",
   "scripts": {
     "example": "parcel ./example/example.html",
+    "test:watch": "jest --watch",
     "test": "jest"
   },
   "dependencies": {
     "xlsx": "^0.14.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-0",
+    "@babel/core": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "babel-jest": "^24.8.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "eslint-plugin-jest": "^22.5.1",
     "jest": "^24.8.0",
