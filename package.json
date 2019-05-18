@@ -11,6 +11,7 @@
     "example": "parcel ./example/example.html",
     "test:watch": "jest --watch",
     "test": "jest",
+    "prebuild": "yarn run test",
     "build": "parcel build index.ts -t node",
     "prepublish": "yarn run build"
   },
