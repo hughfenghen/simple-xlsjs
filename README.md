@@ -1,6 +1,11 @@
 # simple-xlsjs
 基于xlsx封装简单易用的api
 
-![preview](https://raw.githubusercontent.com/hughfenghen/simple-xlsjs/master/example/simple-xlsjs.png)
+### 安装
+`yarn add simple-xlsjs`  
+或  
+`npm i simple-xlsjs`
 
 **api参考 单元测试文件`test/index.test.ts`**
+
+![preview](https://raw.githubusercontent.com/hughfenghen/simple-xlsjs/master/example/simple-xlsjs.png)

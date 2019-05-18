@@ -4,13 +4,15 @@
   "description": "基于xlsx封装简单易用的api",
   "repository": "git@github.com:hughfenghen/simple-xlsjs.git",
   "keywords": ["xls", "xlsx", "js", "simple", "api"],
-  "main": "index.js",
+  "main": "./dist/index.js",
   "author": "fenghen",
   "license": "MIT",
   "scripts": {
     "example": "parcel ./example/example.html",
     "test:watch": "jest --watch",
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build index.ts -t node",
+    "prepublish": "yarn run build"
   },
   "dependencies": {
     "xlsx": "^0.14.3"
@@ -28,8 +30,5 @@
     "jest": "^24.8.0",
     "parcel-bundler": "^1.12.3",
     "typescript": "^3.4.5"
-  },
-  "alias": {
-    "./dist/cpexcel.js": ""
   }
 }
