@@ -8,4 +8,5 @@
 
 **api参考 单元测试文件`test/index.test.ts`**
 
+### 预览图
 ![preview](https://raw.githubusercontent.com/hughfenghen/simple-xlsjs/master/example/simple-xlsjs.png)

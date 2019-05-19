@@ -4,7 +4,7 @@
   "description": "基于xlsx封装简单易用的api",
   "repository": "git@github.com:hughfenghen/simple-xlsjs.git",
   "keywords": ["xls", "xlsx", "js", "simple", "api"],
-  "main": "./dist/index.js",
+  "main": ",/lib/index.js",
   "author": "fenghen",
   "license": "MIT",
   "scripts": {

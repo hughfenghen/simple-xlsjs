@@ -1,4 +1,4 @@
-import { loadWbFromFile, selectSheet, sheet2JSON, selectColumn, selectCell, allRowValues } from '../index';
+import { loadWbFromFile, selectSheet, sheet2JSON, selectColumn, selectCell, allRowValues } from '../lib/index';
 
 interface HTMLInputEvent extends Event {
   target: HTMLInputElement & EventTarget;
