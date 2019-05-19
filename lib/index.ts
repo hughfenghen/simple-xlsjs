@@ -99,3 +99,12 @@ export function allRowValues(sheet: XLSX.Sheet): Array<any> {
 export function sheet2JSON(sheet: XLSX.Sheet, format?: object):Array<object> {
   return XLSX.utils.sheet_to_json(sheet, format)
 }
+
+export default {
+  loadWbFromFile,
+  selectCell,
+  selectColumn,
+  selectSheet,
+  allRowValues,
+  sheet2JSON,
+}

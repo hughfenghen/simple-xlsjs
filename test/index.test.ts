@@ -1,6 +1,5 @@
 import * as path from 'path'
-import XLSX from 'xlsx';
-import { loadWbFromFile, selectSheet, selectColumn, selectCell, allRowValues, sheet2JSON } from '../index';
+import { loadWbFromFile, selectSheet, selectColumn, selectCell, allRowValues, sheet2JSON } from '../lib/index';
 
 // =========文件中的数据========
 // S	I	M	P	L	E - X	L	S	X

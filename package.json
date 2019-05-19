@@ -1,10 +1,10 @@
 {
   "name": "simple-xlsjs",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "基于xlsx封装简单易用的api",
   "repository": "git@github.com:hughfenghen/simple-xlsjs.git",
   "keywords": ["xls", "xlsx", "js", "simple", "api"],
-  "main": ",/lib/index.js",
+  "main": "./lib/index.js",
   "author": "fenghen",
   "license": "MIT",
   "scripts": {
@@ -12,8 +12,8 @@
     "test:watch": "jest --watch",
     "test": "jest",
     "prebuild": "yarn run test",
-    "build": "parcel build index.ts -t node",
-    "prepublish": "yarn run build"
+    "build": "tsc ./lib/index.ts --declaration",
+    "prepublishOnly": "yarn run build"
   },
   "dependencies": {
     "xlsx": "^0.14.3"
