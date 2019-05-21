@@ -14,8 +14,15 @@ document
   .getElementById('file')
   .addEventListener('change', async (evt) => {
     const file = evt.target.files[0]
-    const wb = await loadWbFromFile(file) // => WorkBook
-    const sheet = selectSheet(0, wb)  // => 第一个Sheet
+    const wb = await sxls.loadWbFromFile(file) // => WorkBook
+    const sheet = sxls.selectSheet(0, wb)  // => 第一个Sheet
+
+    console.log(
+      selectCell(['A1', 'B2', 'C2'], sheet),        // 三个特定三元个
+      allRowValues(sheet)[2],                       // 第三行的数据
+      selectColumn({ A: 'type', B: 'code'}, sheet), // 获取A、B 两列命名为 type、code
+      sheet2JSON(sheet),                            // 整个sheet转json
+    )
   })
 ```
 
